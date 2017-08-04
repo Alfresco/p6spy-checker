@@ -9,15 +9,43 @@ Basically takes a p6spy output file (these can be extremely large and difficult 
 ## How to make it work
 There are just a couple of things in the code you need to change.
 
-```line 25
+```
+line 25
 String p6spyfile = ....
 ```
 * change this to the actual path of the output file.
 
 
-```line 17
+```
+line 17
 private static int BATCH = ...
 ```
 * how many longest queries do you want to find, i.e. of the longest queries identified, how far back do tou want to go?
 
+## Prerequisites
+* Eclipse
+* Java 7 or 8
 
+## Output example:
+```
+P6Spy checker
+-------------
+4 of the longest query times:
+QueryTime (ms): 1648749
+QueryTime (ms): 838461
+QueryTime (ms): 706475
+QueryTime (ms): 658068
+--------------------------------
+Date/Time: 26/07/2017 22:46:28 | Query Time (ms): 1648749 | Connection ID: 999 | Category: statement
+Query: 
+            assoc.id                    as id,
+            parentNode.id               as parentNodeId,
+            .......
+--------------------------------
+
+Date/Time: 26/07/2017 23:19:03 | Query Time (ms): 658068 | Connection ID: 998 | Category: statement
+Query: 
+            assoc.id                    as id,
+            parentNode.id               as parentNodeId,
+			....
+```
