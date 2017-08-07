@@ -51,4 +51,4 @@ Query:
 ```
 
 ## Note
-The code for this checker is based on the 'logMessageFormat' found [here](https://p6spy.github.io/p6spy/2.0/configandusage.html)
+The code for this checker looks for delimited patterns based on the 'logMessageFormat' found [here](https://p6spy.github.io/p6spy/2.0/configandusage.html)
