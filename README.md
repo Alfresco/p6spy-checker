@@ -49,3 +49,6 @@ Query:
             parentNode.id               as parentNodeId,
 			....
 ```
+
+## Note
+The code for this checker is based on the 'logMessageFormat' found [here](https://p6spy.github.io/p6spy/2.0/configandusage.html)
